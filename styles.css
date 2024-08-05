@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('Captur.PNG') no-repeat center center fixed; /* Replace with your background image */
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.game-container {
+    text-align: center;
+    color: white;
+}
+
+.money-display {
+    font-size: 2em;
+    margin: 20px 0;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+#progressContainer {
+    width: 200px; /* Width of the progress bar container */
+    height: 20px; /* Height of the progress bar */
+    background-color: #e0e0e0; /* Background color of the progress bar container */
+    border-radius: 10px; /* Rounded corners for the progress bar container */
+    margin: 20px auto; /* Center align and space below the button */
+    position: relative;
+}
+
+#progressBar {
+    height: 100%;
+    width: 0%; /* Initial width of the progress bar */
+    background-color: gold; /* Color of the progress bar */
+    border-radius: 10px; /* Rounded corners for the progress bar */
+    transition: width 0.3s; /* Smooth transition effect */
+}
+#tapButton {
+    width: 200px; /* Increase the width of the button image */
+    height: auto; /* Maintain the aspect ratio */
+    cursor: pointer;
+    margin-top: 20px; /* Space above the button */
+}
+
+#tapContainer {
+    position: relative;
+    display: inline-block;
+    margin: 20px; /* Optional: Adjust margin if needed */
+}
+
+#floatingText {
+    position: absolute;
+    top: -40px; /* Adjust position above the button */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: #76c7c0;
+    opacity: 0;
+    pointer-events: none; /* Ensure it doesn't block clicks */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
